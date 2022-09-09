@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import LoggedOut from "./LoggedOut";
+import LoggedOut from "./screens/LoggedOut";
+import LoggedIn from "./screens/LoggedIn"
 
-import { accessToken, logout } from "./Spotify";
+import { accessToken } from "./Spotify";
 
 function App() {
   const [token, setToken] = useState(null)
@@ -16,12 +17,7 @@ function App() {
         !token ? (
           <LoggedOut />
         ) : (
-          <div>
-            <h1>
-              Logged In!
-            </h1>
-            <button onClick={logout}>Log Out</button>
-          </div>
+          <LoggedIn />
           )
       }
     </div>
