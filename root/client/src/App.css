@@ -30,20 +30,19 @@
   color: whitesmoke;
 }
 
-.record {
-
-}
 
 .circle1 {
-  border: 1px solid slategrey;
+  border: 2px solid slategrey;
   background: black;
   border-radius: 50%;
   width: 700px;
   height: 700px;
 }
+
 .circle2 {
   border: 1px solid slategrey;
   margin-top: -650px;
+  margin-left: 50px;
   background: black;
   border-radius: 50%;
   width: 600px;
@@ -53,6 +52,7 @@
 .circle3 {
   border: 1px solid slategrey;
   margin-top: -550px;
+  margin-left: 100px;
   background: black;
   border-radius: 50%;
   width: 500px;
@@ -62,6 +62,7 @@
 .circle4 {
   border: 1px solid slategrey;
   margin-top: -450px;
+  margin-left: 150px;
   background: black;
   border-radius: 50%;
   width: 400px;
@@ -71,6 +72,7 @@
 .circle5 {
   border: 1px solid slategrey;
   margin-top: -350px;
+  margin-left: 200px;
   background: black;
   border-radius: 50%;
   width: 300px;
@@ -79,18 +81,32 @@
 
 .circle6 {
   border: 1px solid slategrey;
-  margin-top: -250px;
+  margin-top: -225px;
+  margin-left: 275px;
   background-color: white;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
-@keyframes App-logo-spin {
+.text {
+  font-family: Verdana;
+  color: white;
+  font-size: 18px;
+}
+
+.button {
+  font-family: Verdana;
+  margin-Right: 1000px;
+
+}
+
+
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
