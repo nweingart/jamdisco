@@ -3,7 +3,7 @@ import '../App.css'
 import { logout } from "../Spotify";
 
 const LoggedIn = (tracks) => {
-  const [side, setSide] = useState('B')
+  const [side, setSide] = useState('A')
 
   const handleClick = () => {
     side === 'A' ? setSide('B') : setSide('A')
