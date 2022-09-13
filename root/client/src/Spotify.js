@@ -89,4 +89,14 @@ const getAccessToken = () => {
 
 export const accessToken = getAccessToken()
 
+axios.defaults.baseURL = 'https://api.spotify.com/v1'
+axios.defaults.headers['Authorization'] = `Bearer ${accessToken}`
+axios.defaults.headers['Content-Type'] = 'application/json'
+
+export const getProfile = () => axios.get('/me')
+
+export const getTopTracks = () => {
+  return axios.get('/me/top/tracks?time_range=medium_term')
+}
+
 
